@@ -60,7 +60,7 @@ When the view initially loads, the app allocates an OTSession object and sends i
 	{
 		[super viewDidLoad];
 		
-		_session = [[OTSession.alloc] initWithSessionId:kSessionId
+		_session = [[OTSession alloc] initWithSessionId:kSessionId
 											andDelegate:self];
 		[self doConnect];
 	}
