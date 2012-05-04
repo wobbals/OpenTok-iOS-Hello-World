@@ -192,6 +192,14 @@ Finally, when the app disconnects from the session, the OTSubscriber's delegate 
 		NSLog(@"sessionDidDisconnect (%@)", alertMessage);
 	}
 
+If an app cannot connect to the session (perhaps because of no network connection), the OTSubscriber's delegate is sent
+the `session: didFailWithError:` message:
+
+	- (void)session:(OTSession*)session didFailWithError:(OTError*)error {
+		NSLog(@"sessionDidFail");
+		[self showAlert:[NSString stringWithFormat:@"There was an error connecting to session %@", session.sessionId]];
+	}
+
 ## Next steps
 
 The [OpenTokBasic sample app](https://github.com/opentok/OpenTok-iOS-Basic-Tutorial) uses more features of the OpenTok iOS SDK than the OpenTokHello app does.

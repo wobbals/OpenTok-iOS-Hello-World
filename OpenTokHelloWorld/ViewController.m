@@ -118,18 +118,18 @@ static bool subscribeToSelf = YES; // Change to NO if you want to subscribe to s
     [self.view addSubview:subscriber.view];
 }
 
-- (void)publisher:(OTPublisher*)publisher didFailWithError:(NSError*) error {
+- (void)publisher:(OTPublisher*)publisher didFailWithError:(OTError*) error {
     NSLog(@"publisher didFailWithError %@", error);
     [self showAlert:[NSString stringWithFormat:@"There was an error publishing."]];
 }
 
-- (void)subscriber:(OTSubscriber*)subscriber didFailWithError:(NSError*)error
+- (void)subscriber:(OTSubscriber*)subscriber didFailWithError:(OTError*)error
 {
     NSLog(@"subscriber %@ didFailWithError %@", subscriber.stream.streamId, error);
     [self showAlert:[NSString stringWithFormat:@"There was an error subscribing to stream %@", subscriber.stream.streamId]];
 }
 
-- (void)session:(OTSession*)session didFailWithError:(NSError*)error {
+- (void)session:(OTSession*)session didFailWithError:(OTError*)error {
     NSLog(@"sessionDidFail");
     [self showAlert:[NSString stringWithFormat:@"There was an error connecting to session %@", session.sessionId]];
 }
