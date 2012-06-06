@@ -23,6 +23,8 @@ static NSString* const kSessionId = @"1sdemo00855f8290f8efa648d9347d718f7e06fd";
                                 // For a unique API key, go to http://staging.tokbox.com/hl/session/create
 static bool subscribeToSelf = YES; // Change to NO if you want to subscribe to streams other than your own.
 
+// The coordinate system is a little wonky from all the transforms we perform on CALayers. 
+// Rotating CIFaceFeature coordinates about the origin seems to do the trick.
 CGPoint invertedPoint(CGPoint point) {
     CGPoint myPoint;
     myPoint.x = -1 * point.x;
@@ -140,8 +142,8 @@ CGPoint invertedPoint(CGPoint point) {
         if (features.count > 0) {
             //NSLog(@"origin: x=%f y=%f", faceCenter.x, faceCenter.y);
             
+            //You can also render multiple layers onto the bitmap, if you so desire.
             //[featureView.layer renderInContext:theContext];
-            
             //CGImageRef imageWithFeatures = CGBitmapContextCreateImage(theContext);
             //UIImage* renderedFeatureImage = [[UIImage alloc] initWithCGImage:imageWithFeatures];
             //UIImageView* imageView = [[UIImageView alloc] initWithImage:renderedFeatureImage];
