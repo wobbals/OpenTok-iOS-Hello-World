@@ -30,6 +30,7 @@
 		1FE24FCF14F71E47002929E6 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FE24FCD14F71E47002929E6 /* MainStoryboard_iPhone.storyboard */; };
 		1FE24FD214F71E47002929E6 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FE24FD014F71E47002929E6 /* MainStoryboard_iPad.storyboard */; };
 		1FE24FD514F71E47002929E6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FE24FD414F71E47002929E6 /* ViewController.m */; };
+		D453702C15801C48004B7141 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D453702B15801C48004B7141 /* CoreImage.framework */; };
 		D469B0C314FF0EE50027EB4B /* Opentok.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D469B0C214FF0EE50027EB4B /* Opentok.framework */; };
 		D46D3E7B14F85CD700DEDEDF /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D46D3E7A14F85CD700DEDEDF /* CoreTelephony.framework */; };
 /* End PBXBuildFile section */
@@ -63,6 +64,7 @@
 		1FE24FD114F71E47002929E6 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		1FE24FD314F71E47002929E6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		1FE24FD414F71E47002929E6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D453702B15801C48004B7141 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
 		D469B0C214FF0EE50027EB4B /* Opentok.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Opentok.framework; sourceTree = "<group>"; };
 		D46D3E7A14F85CD700DEDEDF /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -72,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D453702C15801C48004B7141 /* CoreImage.framework in Frameworks */,
 				D46D3E7B14F85CD700DEDEDF /* CoreTelephony.framework in Frameworks */,
 				1FE24FBC14F71E47002929E6 /* UIKit.framework in Frameworks */,
 				1FE24FBE14F71E47002929E6 /* Foundation.framework in Frameworks */,
@@ -116,6 +119,7 @@
 		1FE24FBA14F71E47002929E6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D453702B15801C48004B7141 /* CoreImage.framework */,
 				D469B0C214FF0EE50027EB4B /* Opentok.framework */,
 				D46D3E7A14F85CD700DEDEDF /* CoreTelephony.framework */,
 				1F3B0CDE14F725E100511DCC /* MobileCoreServices.framework */,
