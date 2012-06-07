@@ -37,14 +37,16 @@ CGPoint invertedPoint(CGPoint point) {
     
     CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
     
+    //Someimtes Core Graphics doesn't allocate resources as you'd expect. Rather than investegate the root cause, a brute force method is applied.
     CGContextRef theContext = NULL;
     for (int i = 0; i < 10 && theContext == NULL; i++) {
         theContext = CGBitmapContextCreate(NULL, imageSize.width, imageSize.height, 8, 4*imageSize.width, colorSpace, kCGImageAlphaPremultipliedLast);
     }
+    CGColorSpaceRelease(colorSpace);
     if (!theContext) {
         return;
     }
-    
+
     UIView* featureViewApplied = nil;
     CIDetector* detector = [CIDetector detectorOfType:CIDetectorTypeFace
                                               context:nil
