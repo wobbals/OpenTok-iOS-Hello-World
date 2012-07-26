@@ -48,7 +48,7 @@
 		1F3B0CE814F725E100511DCC /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
 		1F3B0CE914F725E100511DCC /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		1F3B0CEA14F725E100511DCC /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		1F6FBCBD15546FC900FA9225 /* opentok.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = opentok.bundle; path = "../../opentok-ios-sdk/Opentok.framework/Versions/A/Resources/opentok.bundle"; sourceTree = "<group>"; };
+		1F6FBCBD15546FC900FA9225 /* opentok.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = opentok.bundle; path = "../opentok-ios-sdk/Opentok.framework/Versions/A/Resources/opentok.bundle"; sourceTree = "<group>"; };
 		1FE24FB714F71E47002929E6 /* OpenTokHello.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenTokHello.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FE24FBB14F71E47002929E6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		1FE24FBD14F71E47002929E6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -144,8 +144,8 @@
 				1FE24FCA14F71E47002929E6 /* AppDelegate.h */,
 				1FE24FCB14F71E47002929E6 /* AppDelegate.m */,
 				1FE24FCD14F71E47002929E6 /* MainStoryboard_iPhone.storyboard */,
-				1F6FBCBD15546FC900FA9225 /* opentok.bundle */,
 				1FE24FD014F71E47002929E6 /* MainStoryboard_iPad.storyboard */,
+				1F6FBCBD15546FC900FA9225 /* opentok.bundle */,
 				1FE24FD314F71E47002929E6 /* ViewController.h */,
 				1FE24FD414F71E47002929E6 /* ViewController.m */,
 				1FE24FC214F71E47002929E6 /* Supporting Files */,
