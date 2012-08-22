@@ -14,7 +14,7 @@ Testing the sample app
 
 1. Open the OpenTokHelloWorld.xcodeproj file in XCode.
 
-2. Connect your iOS device to a USB port on your Mac. Make sure that your device is connected to a wifi network.
+2. Connect your iOS device to a USB port on your Mac. Make sure that your device is connected to the internet.
 
 3. Select the XCode Organizer (Window > Organizer), and make sure that your device is provisioned to work with the sample app. For more information,
 see the section on "Setting up your development environment" at [this page](https://developer.apple.com/programs/ios/gettingstarted/) at
