@@ -65,6 +65,7 @@
 		1FE24FD414F71E47002929E6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		D469B0C214FF0EE50027EB4B /* Opentok.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Opentok.framework; sourceTree = "<group>"; };
 		D46D3E7A14F85CD700DEDEDF /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		D491B90015EE941F00C3307C /* token.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = token.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +142,7 @@
 		1FE24FC114F71E47002929E6 /* OpenTokHelloWorld */ = {
 			isa = PBXGroup;
 			children = (
+				D491B90015EE941F00C3307C /* token.h */,
 				1FE24FCA14F71E47002929E6 /* AppDelegate.h */,
 				1FE24FCB14F71E47002929E6 /* AppDelegate.m */,
 				1FE24FCD14F71E47002929E6 /* MainStoryboard_iPhone.storyboard */,
@@ -171,6 +173,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1FE24FD814F71E47002929E6 /* Build configuration list for PBXNativeTarget "OpenTokHelloWorld" */;
 			buildPhases = (
+				D491B8FF15EE93FA00C3307C /* ShellScript */,
 				1FE24FB314F71E47002929E6 /* Sources */,
 				1FE24FB414F71E47002929E6 /* Frameworks */,
 				1FE24FB514F71E47002929E6 /* Resources */,
@@ -222,6 +225,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D491B8FF15EE93FA00C3307C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export PYTHONPATH=${SRCROOT}/Opentok-Python-SDK\nOPENTOKTOKEN=`python ${SRCROOT}/OpenTokHelloWorld/generate_token.py`\necho \"#define kOpenTokHelloWorldToken @\\\"${OPENTOKTOKEN}\\\"\" > ${SRCROOT}/OpenTokHelloWorld/token.h";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1FE24FB314F71E47002929E6 /* Sources */ = {

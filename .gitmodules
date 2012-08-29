@@ -1,3 +1,6 @@
 [submodule "opentok-ios-sdk"]
 	path = opentok-ios-sdk
 	url = git@github.com:opentok/opentok-ios-sdk.git
+[submodule "Opentok-Python-SDK"]
+	path = Opentok-Python-SDK
+	url = git://github.com/opentok/Opentok-Python-SDK.git
